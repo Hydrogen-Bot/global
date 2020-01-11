@@ -17,5 +17,3 @@ client.on("message", async(msg) => {
   await Promise.all(client.channels.filter(c => c.name === 'hydrogen-global-chat').map(c => c.send(e)))
   await Promise.all(client.channels.filter(c => c.name === 'hydrogen-global-chat').map(c => c.setTopic(`Last message was sent by <@${msg.author.id}>`)))
 })
-
-client.login("NNjI3MzcwNzkzMzY5NjAwMDEx.XhkXfg.R9r4s_89GIqSt4NyVVcYYOpJAes")
