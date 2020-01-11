@@ -4,6 +4,7 @@ const hex = require("random-hex")
 
 client.on("message", async(msg) => {
   if(msg.channel.name !== "hydrogen-global-chat")return;
+  msg.delete();
   let e = new Discord.RichEmbed()
     .setTitle("Hydrogen Global Chat")
     .setAuthor(msg.guild.name, msg.guild.iconURL)
